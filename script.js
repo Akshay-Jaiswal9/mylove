@@ -111,9 +111,9 @@ class Paper {
       this.rotating = false;
     });
 
-    // Prevent scrolling while touching
+    // Prevent scrolling while touching (to avoid unwanted side effects)
     paper.addEventListener('touchmove', (e) => {
-      e.preventDefault();
+      e.preventDefault(); // Prevent scrolling when dragging
     });
   }
 }
