@@ -65,3 +65,9 @@ p {
   user-select: none;
   
 }
+/* For mobile and touch devices */
+@media (pointer: coarse) {
+  .paper {
+    touch-action: none;  /* Ensure no zoom or scroll happens when dragging */
+  }
+}
